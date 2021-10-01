@@ -84,7 +84,7 @@ async def uploader(event):
         return
     else:
         os.remove(downloaded_file_name)
-        await ok.edit("Uploaded to **Telegraph**\n\n       Klik link di bawah untuk mengcopy👇🏻👇🏻👇🏻\n```https://telegra.ph{media_urls[0])```\n\n~[@SF Corp](https://t.me/SFCorpChannel)",
+        await ok.edit("Uploaded to **Telegraph**\n\n       Klik link di bawah untuk mengcopy👇🏻👇🏻👇🏻\n```url=f"https://telegra.ph{media_urls[0]}"```\n\n~[@SF Corp](https://t.me/SFCorpChannel)",
                     link_preview=False,
                     buttons=[
                         Button.url("Link To File", url=f"https://telegra.ph{media_urls[0]}")
