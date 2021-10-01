@@ -1,5 +1,5 @@
-# Part of < https://github.com/xditya/TelegraphUploader >
-# (c) 2021 @xditya.
+# Part of < https://github.com/pernandapurba/TelegraphUploader >
+# (c) 2021 @SFCorp.
 
 import os
 import logging
@@ -84,7 +84,7 @@ async def uploader(event):
         return
     else:
         os.remove(downloaded_file_name)
-        await ok.edit("Uploaded to **Telegraph**\n\n       Klik link di bawah untuk mengcopy👇🏻👇🏻👇🏻\n```https://telegra.ph{}```\n\n~[@SF Corp](https://t.me/SFCorpChannel)".format(media_urls[0]),
+        await ok.edit("Uploaded to **Telegraph**\n\n 👇🏻Klik link di bawah untuk mengcopy👇🏻\n```https://telegra.ph{}```\n\n~[@SF Corp](https://t.me/SFCorpChannel)".format(media_urls[0]),
                     link_preview=False,
                     buttons=[
                         Button.url("Link To File", url=f"https://telegra.ph{media_urls[0]}")
