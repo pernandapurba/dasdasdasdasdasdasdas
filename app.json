@@ -1,0 +1,32 @@
+{
+    "name": "Telegraph Bot",
+    "description": "Python based bot to Force Users to sub a channel.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot"
+    ],
+    "repository": "https://github.com/xditya/ForceSub",
+    "website": "xditya.me",
+    "success_url": "https://t.me/BotzHub",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
